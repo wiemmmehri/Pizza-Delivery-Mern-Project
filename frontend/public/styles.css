@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Roboto:ital,wght@0,100;0,400;1,100&family=Source+Sans+Pro:wght@200;300&display=swap');
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+
+
+.nav-item {
+    margin: 0 1.5rem;
+    font-size: large;
+}
+
+.navbar-brand {
+    margin-left: 1vw;
+    padding-right: 2vw;
+}
+
+
+
+.navbar-nav {
+    margin-left: 15vw;
+}
+
+
+
+.homepage {
+    height: 100%;
+    background-color: #E4F7FF;
+}
+
+.applogo {
+    margin-left: 10vw;
+    width: 6vh;
+    height: 6vh;
+}
+
+.nav-link:hover {
+    color: rgb(229, 85, 85) !important;
+}
+
+.pizzaimg {
+    transition: transform 0.7s;
+    border-radius: 5px;
+}
+
+.pizzaimg:hover {
+    transform: scale(1.03);
+
+}
+
+.pizzaname {
+    font-weight: 800;
+    font-size: 0.8rem;
+}
+
+.vegicon {
+    height: 1.2rem;
+    width: 1.2rem;
+    padding-right: 2px;
+}
+
+.card-text {
+    font-size: 1.1vw;
+}
+
+p {
+    margin: 0;
+}
+
+.price {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+
+    align-items: center;
+}
+
+.pricenum {
+    flex: 50%;
+}
+
+.buttons {
+    flex: 50%;
+    position: relative;
+}
+
+.plus,
+.minus {
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.plus {
+    padding-left: 1.5vw;
+}
+
+.minus {
+    padding-right: 1.3vw;
+}
+
+.add,
+.plusminus {
+    width: 7vw;
+    background-color: #3498db;
+
+    border: none;
+    border-radius: 6px;
+    font-family: Arial;
+    color: #ffffff;
+    /* font-size: 15px;
+    padding: 7px 15px 7px 15px; */
+    font-size: 1vw;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    text-decoration: none;
+
+}
+
+
+.add:hover,
+.plusminus:hover {
+    background-color: #3cb0fd;
+
+    text-decoration: none;
+}
+
+.card-body {
+    font-size: 1.4vw;
+}
+
+.pizzacard {
+    margin: 3vh 1vw;
+    width: fit-content;
+}
+
+.roww {
+    display: flex;
+}
+
+.col-lgg-4 {
+    width: fit-content;
+    display: inline-block;
+}
+
+.card-subtitle {
+    font-size: 0.9vw;
+}
+
+.or {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.or span {
+
+    background: #E4F7FF;
+    padding: 0 10px;
+}
+
+.selecthere {
+    text-align: center;
+    margin: 5vh;
+}
+
+.mkpizza {
+    text-align: center;
+    margin: 5vh 36.5vw;
+
+}
+
+@media (max-width:995px) {
+    .mkpizza {
+        position: relative;
+        right: 3rem;
+        width: 11rem;
+    }
+
+    .logincomponent {
+        width: 75% !important;
+        height: 50% !important;
+    }
+
+    .registercomponent {
+        height: min-content !important;
+    }
+}
+
+.basecontainer {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.baseimg {
+    height: 12rem;
+    width: 12rem;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.basediv {
+    text-align: center;
+    margin: 2rem auto;
+
+}
+
+.click-state {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 red;
+    transition: transform .2s;
+    transform: scale(1.04);
+}
+
+.basediv h4 {
+    margin: 1rem 0;
+}
+
+
+
+.next {
+    padding: 0 1rem;
+    font-size: large;
+    position: relative;
+    left: 40vw;
+}
+
+.active {
+    color: rgb(229, 85, 85) !important;
+}
+
+.linkk {
+    text-decoration: none;
+    color: black;
+}
+
+.login {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login img {
+    height: 100vh;
+    width: 100vw;
+}
+
+.logincomponent {
+    border: solid 1px rgb(165, 58, 58);
+    position: absolute;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    width: 25%;
+    height: fit-content;
+    background-color: rgb(244, 232, 232);
+    text-align: center;
+}
+
+.logincomponent input {
+    margin-left: 0.4rem;
+    width: 65%;
+    height: 2rem;
+}
+
+.logincomponent div {
+    margin: 2.5rem auto;
+}
+
+.logincomponent h2 {
+    margin: 0 auto;
+}
+
+.logincomponent small {
+    display: block;
+    padding-top: 1rem;
+}
+
+.registercomponent {
+    height: fit-content;
+    padding-bottom: 2rem;
+    width: 30vw;
+}
+
+.Registererr {
+    color: rgb(243, 73, 73);
+}
+
+.custimg {
+    height: 8rem;
+    width: 8rem;
+}
+
+.adminPage h2 {
+    text-align: center;
+    margin: 3rem 0;
+    background-color: #b4cdde;
+}
+
+.customingredients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.h21 {
+    margin-top: 3rem !important;
+}
+
+#logout {
+    margin-left: 80%;
+    margin-top: 1rem;
+}
+
+.welcome {
+    text-align: center;
+    background-color: #75c975;
+    margin-top: 1rem
+}
+
+.customPrice {
+    text-align: center;
+    margin: 2rem 0;
+    margin-left: 3rem;
+}
+
+.orders {
+    text-align: center;
+}
+
+.order {
+    background-color: #fad596;
+    max-width: 30rem;
+    margin: 2rem auto;
+    box-shadow: 10px 10px 5px #6e7a7e;
+}
+
+.detail {
+    text-align: left;
+    padding: 1rem;
+}
+
+.order h4 {
+    padding-top: 1rem;
+}
+
+.detail h5 {
+    margin-bottom: 0;
+}
+
+.quantity {
+    margin: 0.5rem auto;
+}
+
+.detail p {
+    font-size: 1rem;
+}
+
+.needtolog {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cancelCustom {
+    display: block;
+    margin: 1rem 0 1rem 1rem;
+}
+
+.btns {
+    width: fit-content;
+    height: 2rem;
+    background-color: #ffb571;
+}
+
+.adminplus,
+.adminminus {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.AdminBases {
+    margin: 30vh auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.AdminBases h6 {
+    margin: 1.3rem auto;
+}
+
+.base1,
+.base2,
+.base3,
+.base4,
+.base5 {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.basses h1 {
+    text-align: center;
+    margin-top: 2rem;
+    background-color: #ffb571;
+}
+
+.status {
+
+    padding: 0 0.5rem;
+    background-color: #a2faa2;
+}
+
+.status span {
+    float: right;
+}
+
+.carth1 {
+    text-align: center;
+    margin: 1.3rem 0;
+}
+
+.cart {
+    text-align: center !important;
+    max-width: 30rem;
+    margin: auto;
+    background-color: #ffedd6;
+    padding: 1rem 0;
+    margin: 2rem auto;
+}
+
+.cart h5 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.cartbody {
+    text-align: left;
+    margin-left: 1rem;
+    /* display: flex; */
+}
+
+.cartbody p {
+    margin-bottom: 0.5rem;
+}
+
+.cartbody button {
+    margin-left: 35%;
+    margin-top: 1rem;
+    width: 129px;
+    background-color: rgb(255 127 80);
+    border: none;
+}
+
+
+.removefromcart {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3rem;
+    border: none;
+
+}
+
+img {
+
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.removefromcart:hover {
+    background-color: rgb(255, 107, 107);
+}
+
+.orderss {
+    background-color: #fad596;
+    max-width: 30rem;
+    margin: 2rem auto;
+    box-shadow: 10px 10px 5px #6e7a7e;}
+
+.bigdiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.div2 {
+    margin-right: 3rem;
+}
+
+.orderid {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.Adminpageinp {
+    max-width: 10rem;
+}
+
+.dropbtn {
+    border: none;
+    height: 2rem;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.fillotp {
+    margin: 1rem auto;
+}
+
+.checkotp button {
+    margin: 1rem auto;
+}
+
+.sub {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    margin-left: 45px;
+    position: absolute;
+    width: 129px;
+    background-color: #f1f1f1;
+    max-width: 19rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+}
+
+.add {
+    cursor: pointer;
+}
+
+.footer {
+
+    margin-top: 2rem;
+    width: 100%;
+    background-color: #7fccfc;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer small {
+    color: #fb8c00;
+    font-weight: 400;
+}
+
+.CartPage {
+    min-height: 73vh !important;
+}
+
+.trial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.rightcorner {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.rightcorner i {
+    font-size: 2rem;
+}
+
+.mkrt {
+    margin-left: 10vw !important;
+}

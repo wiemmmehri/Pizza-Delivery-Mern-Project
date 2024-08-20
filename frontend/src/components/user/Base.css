@@ -1,0 +1,236 @@
+.base {
+    background-color: #FFF3E0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    padding: 0px 0;
+}
+
+.cart-page {
+    padding: 20px;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgb(251 209 88);
+}
+
+.timeline-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    flex: 1;
+}
+
+.timeline-step.active .step-circle {
+    background-color: #ff8266;
+    color: #fff;
+}
+.baseimg{
+    margin-left: 1%;
+    margin-top: 3%;
+    border: unset;
+}
+.confirmation.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.order-review-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 460px;
+    width: 100%;
+}
+.cart card {
+    background-color: white;
+}
+
+.order-details {
+    flex: 1 1;
+    padding: 26px;
+    padding-left: 104px;
+    background-color: #fff;
+    place-content: center;
+
+}
+
+.order-details .section-title {
+    color: #ff8266;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.order-details p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.order-details .custom-price {
+    color: #ff8266;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.order-details .buttons {
+    margin-top: 20px;
+}
+
+.order-details .btn {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.order-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.order-image img {
+    max-width: 132%;
+    height: auto;
+    width: 497px;
+    border-radius: 10px;
+}
+
+.timeline-step .step-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.timeline-step .step-label {
+    font-size: 16px;
+    color: #444;
+    font-weight: bold;
+}
+
+.timeline-bar {
+    border: none;
+    height: 3px;
+    background-color: #ff8266;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+}
+
+.option-grid {
+    margin-top: 30px;
+}
+
+.section-title {
+    color: #FF7043;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.option {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    padding: 10px;
+    border-radius: 10px;
+    height: 200px; /* Ensures consistent height for all options */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border: 1px solid #FF7043;
+    margin-right: 22px;
+}
+
+.option img {
+    width: 158px; /* Adjust the size of the image */
+    height: 146px; /* Maintain consistent height */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.option:hover {
+    transform: scale(1.05);
+}
+
+.option.selected {
+    background-color: rgba(255, 112, 67, 0.1);
+    border: 2px solid #FF7043;
+}
+
+.base-img {
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+h5 {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #FF7043;
+    font-weight: bold;
+}
+
+.out-of-stock {
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.next-btn {
+    background-color: #FF7043;
+    border-color: #FF7043;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.next-btn:disabled {
+    background-color: #FFC1A3;
+    cursor: not-allowed;
+}
+
+.confirmation {
+    padding: 20px;
+}
+
+.custom-price {
+    color: #FF7043;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+.section-title{
+    
+    margin-top: 47px;
+
+}
+.footer{
+    bottom: -24px;
+}
